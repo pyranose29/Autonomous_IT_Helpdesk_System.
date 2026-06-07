@@ -1,5 +1,5 @@
-**Bold text**
-#System Architecture: Autonomous IT Helpdesk
+**System Architecture: Autonomous IT Helpdesk**
+
 This system is an Intelligent Agentic Workflow designed to automate IT support operations. By leveraging a multi-agent framework, it reduces Mean Time to Resolution (MTTR) by automating Tier-1 support queries (password resets, access requests) and intelligently routing complex issues to human engineers in Jira.
 
 ```mermaid
