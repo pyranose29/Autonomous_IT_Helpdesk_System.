@@ -27,7 +27,7 @@ graph LR
     C -->|Failed?| E
     E -->|Create Case| F
 ```
-##Component Specification (Industry Standard)
+**Component Specification (Industry Standard)**
 Ticket Classification Agent
 Responsibility: Uses Natural Language Understanding (NLU) to categorize tickets into Access, Hardware, Software, or Security.
 
@@ -49,12 +49,12 @@ Responsibility: Handles "Context Handover."
 
 Key Logic: It does not just send a raw ticket. It packages a Resolution_Summary JSON containing all previously attempted steps, error logs, and user metadata to ensure the human engineer has a full "Event History."
 
-##Operational Protocols
+**Operational Protocols**
 A2A Communication: Agents communicate via asynchronous message queues. This ensures that if the Confluence MCP is down, the Troubleshooting Agent can retry the request with exponential backoff rather than crashing.
 
 Security & Compliance: All interactions with Active Directory MCP are logged in a tamper-proof audit trail. The system requires an "Human-in-the-Loop" (HITL) approval for high-privilege access requests (e.g., granting admin rights).
 
-##Technology Mapping
+**Technology Mapping**
 | Tool | Technology | Justification |
 | :--- | :--- | :--- |
 | Jira MCP | REST API | Standardizes issue tracking and SLA management. |
